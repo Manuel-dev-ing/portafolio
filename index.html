@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="icon" type="image/png" href="img/código-fuente.png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/componentes/header.css">
+    <link rel="stylesheet" href="css/componentes/hero.css">
+    <link rel="stylesheet" href="css/componentes/about.css">
+    <link rel="stylesheet" href="css/componentes/featured.css">
+    <link rel="stylesheet" href="css/componentes/proyectos.css">
+    <link rel="stylesheet" href="css/componentes/contacto.css">
+    <link rel="stylesheet" href="css/componentes/footer.css">
+    <link rel="stylesheet" href="css/componentes/menu-mobile.css">
+
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header class="header container">
+        <nav>
+            <ul class="header__menu">
+                <li>
+                    <a class="header__link" href="#about">Sobre mi</a>
+                </li>
+                <li>
+                    <a class="header__link" href="#featured">Proyectos</a>
+                </li>
+                <li>
+                    <a class="header__link" href="#contact">Contacto</a>
+                </li>
+                <li>
+                    <a class="header__link" href="https://github.com/Manuel-dev-ing" target="_blank">Github</a>
+                </li>
+
+                <li class="header__line"></li>
+                <li>
+                    <button class="header__sun" id="theme-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                          </svg>
+                          
+                    </button>
+                </li>
+                <li>
+                    <a class="header__resume btn" href="/documentos/CV_Manuel_Tamayo_Montero.pdf" download>Descargar CV</a>
+                </li>
+            </ul>
+
+            <button class="header__bars">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                  
+            </button>
+
+
+        </nav>
+
+    </header>
+    <!-- Inicio Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">Sobre mi</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Proyectos</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contacto</a>
+          </li>
+          <li>
+            <a class="header__link" href="https://github.com/Manuel-dev-ing" target="_blank">Github</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="/documentos/CV_Manuel_Tamayo_Montero.pdf" download>Descargar CV</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Fin Mobile Navigation -->
+
+    <main>
+        <section class="hero container">
+            <img loading="lazy" class="hero__img" src="/img/hero.jpeg" alt="Profile picture" />
+            <h2 class="hero__subtitle">Hi, I'm Ramzi </h2>
+            <h1 class="hero__title">WEB DEVELOPER.</h1>
+            <p class="hero__description">
+              Ingeniero en Informatica con experiencia en la creacion de <strong>Aplicaciones Web y Base de Datos.</strong> Especializado en PHP, C#, JavaScript, JQuery, Bootstrap, css, HTML, MYSQL y SQL Server.
+            </p>
+        </section>
+        <section id="about" class="about container section">
+            <div class="about__content">
+                <h2 class="about__title">Sobre mi</h2>
+                <p class="about__description">
+                ¡Hola! me llamo I'm Ramzi, a
+                <strong>Desarrollador Web</strong> siempre en busca de mejorar mis habilidades y explorar nuevas soluciones. En mi tiempo libre, me gusta leer libros y disfrutar de un buen cafe, una conbinacion que me inspira a seguir aprendiendo y mejorando cada dia.
+                </p>
+                <p class="about__description">
+                  Durante mi formación académica en la carrera de Ingeniería informática en el Instituto Tecnológico Superior de Apatzingán he participado en concursos de programación organizado por el club de programación, adquirí habilidades en resolución de problemas, trabajo en equipo, atención a los detalles, innovación, investigación, pensamiento lógico matemático, proactividad y conocimientos en base de datos, programación orientada a objetos en el lenguaje de programación de java y php.
+                </p>
+                
+                <hr class="about__hr" />
+                <h3 class="about__subtitle">Tecnologías</h3>
+                <div class="about__ul-container">
+                <ul class="about__ul">
+                  <li class="about__list">PHP</li>
+                  <li class="about__list">JavaScript (ES6+)</li>
+                  <li class="about__list">MYSQL</li>
+                  <li class="about__list">CSS</li>
+                </ul>
+                <ul class="about__ul">
+                    <li class="about__list">C#</li>
+                    <li class="about__list">Windows Forms</li>
+                    <li class="about__list">SQL SERVER</li>
+                    <li class="about__list">HTML</li>
+                </ul>
+                </div>
+            </div>
+            <!-- <div class="about__img-wrapper">
+                <img loading="lazy" class="about__img" src="/img/about.jpg" alt="Profile picture" />
+            </div> -->
+        </section>
+        <!-- <section id="featured" class="featured container section">
+
+            <h3 class="featured__subtitle">Featured project</h3>
+            <div class="featured__wrapper">
+              <h2 class="featured__title">Slaying The Dragon</h2>
+              <a
+                aria-label="link featured projects" class="featured__link" href="#"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+                  />
+                </svg>
+              </a>
+            </div>
+            <p class="featured__description">
+              Cillum voluptate tempor cillum culpa cupidatat labore voluptate
+              ullamco voluptate culpa sunt nulla non. Ad cupidatat dolore quis amet
+              pariatur consectetur ullamco. Officia quis id velit duis cupidatat
+              sunt deserunt do aliquip nulla laboris.
+            </p>
+            <div class="featured__info-container">
+              <div>
+                <h3 class="featured__label">Tech stack</h3>
+                <ul class="featured__tech-stack">
+                  <li class="featured__info">TailwindCSS</li>
+                  <li class="featured__info">ReactJS</li>
+                  <li class="featured__info">React-hook-form</li>
+                  <li class="featured__info">NextJS</li>
+                  <li class="featured__info">Axios</li>
+                  <li class="featured__info">Supabase</li>
+                  <li class="featured__info">Stripe</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="featured__label">Project type</h3>
+                <p class="featured__info">Fullstack-Jamstack</p>
+              </div>
+              <div>
+                <h3 class="featured__label">Timeline</h3>
+                <p class="featured__info">December 2022 - present</p>
+              </div>
+            </div>
+            <div class="featured__img-container">
+              <div class="featured__img-wrapper">
+                <img loading="lazy"
+                  class="lazy loading"
+                  src=""
+                  data-src="/slayingthedragon.png"
+                  alt="Slaying The Dragon hero"
+                />
+              </div>
+              <div class="featured__img-wrapper">
+                <img loading="lazy"
+                  class="lazy loading"
+                  src=""
+                  data-src="/courses.png"
+                  alt="Slaying The Dragon courses"
+                />
+              </div>
+              <div class="featured__img-wrapper">
+                <img loading="lazy"
+                  class="lazy loading"
+                  src=""
+                  data-src="/pricing.png"
+                  alt="Slaying The Dragon pricing"
+                />
+              </div>
+              <div class="featured__img-wrapper">
+                <img loading="lazy"
+                  class="lazy loading"
+                  src=""
+                  data-src="/features.png"
+                  alt="Slaying The Dragon features"
+                />
+              </div>
+              <div class="featured__img-wrapper">
+                <img loading="lazy"
+                  class="lazy loading"
+                  src=""
+                  data-src="/faq.png"
+                  alt="Slaying The Dragon faqs"
+                />
+              </div>
+              <div class="featured__img-wrapper">
+                <img loading="lazy"
+                  class="lazy loading"
+                  src=""
+                  data-src="/blog.png"
+                  alt="Slaying The Dragon blog"
+                />
+              </div>
+              <div class="featured__img-wrapper">
+                <img loading="lazy"
+                  class="lazy loading"
+                  src=""
+                  data-src="/signin.png"
+                  alt="Slaying The Dragon sign-in"
+                />
+              </div>
+              <div class="featured__img-wrapper">
+                <img loading="lazy"
+                  class="lazy loading"
+                  src=""
+                  data-src="/app.png"
+                  alt="Slaying The Dragon dashboard"
+                />
+              </div>
+            </div>
+
+        </section> -->
+        <section id="featured" class="work container section">
+          <h2 class="work__title">Proyectoss</h2>
+          <p class="work__description">
+            
+          </p>
+          <div class="work__container">
+            <!-- Project 1 -->
+            <h3 class="work__project-title">Wax Motif</h3>
+            <div class="work__img-wrapper work__image1">
+              <img loading="lazy" class="lazy loading"
+                src="/img/registro-incidencias.png"
+                alt="registro incidencias"
+              />
+            </div>
+            <div class="work__project work__content1">
+              <h3 class="work__project-subtitle">Proyecto de Residencias Profesionales</h3>
+            
+              <p class="work__project-description2">
+                Este proyecto fue desarrollado como parte de mis prácticas profesionales de la universidad. Su propósito es servir de soporte a las funciones del Departamento de Tecnologías en una cadena de farmacias, mediante un sistema de registro de incidencias.
+              </p>
+              <a class="btn work__project-btn" href="https://quirky-county-kuj.mnz.dom.my.id/" target="_blank">Website</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="work__img-wrapper work__image2">
+              <img loading="lazy"
+                class="lazy loading"
+                src="/img/librosNet.png"
+                alt="LibrosNet"
+              />
+            </div>
+            <div class="work__project work__content2">
+              <h3 class="work__project-subtitle">LibrosNet</h3>
+             
+              <p class="work__project-description2">
+                LibrosNet es un carrito de compras para libros construido en ASP.NET core, aprovechando las ultimas mejoras de esta tecnologia para ofrecer seguridad y escalabilidad. Diseñado en la arquitectura MVC permitiendo futuras actualizaciones y mejoras sin interupciones significativas.
+              </p>
+              <a class="btn work__project-btn" href="https://www.librosnext.somee.com/" target="_blank">Website</a>
+            </div>
+            <!-- Project 3 -->
+            
+            <div class="work__img-wrapper work__image3">
+              <img loading="lazy"
+                class="lazy loading"
+                src="/img/bienes-raices.PNG"
+                alt="Bienes Raíces"
+              />
+            </div>
+            <div class="work__project work__content3">
+              <h3 class="work__project-subtitle">Bienes Raíces</h3>
+              
+              <p class="work__project-description2">
+                Bienes Raíces es un proyecto desarrollado en PHP y MySQL, diseñado para gestionar propiedades inmobiliarias. La arquitectura del proyecto sigue el patrón MVC (Modelo-Vista-Controlador) y emplea ActiveRecord para la interacción con la base de datos, facilitando una implementación eficiente y clara.
+              </p>
+              <a class="btn work__project-btn" href="https://zany-bienesraices-fub.mnz.dom.my.id/" target="_blank">Website</a>
+            </div>
+            <!-- Project 4 -->
+            <div class="work__img-wrapper work__image4">
+              <img loading="lazy"
+                class="lazy loading"
+                src="/img/entrenador-pokemon.png"
+                alt="entrenador pokemon"
+              />
+            </div>
+            <div class="work__project work__content4">
+              <h3 class="work__project-subtitle">Entrenador Pokemon</h3>
+              <p class="work__project-description2">
+                Este proyecto permite obtener información de Pokémon e ítems desde la PokeAPI, para luego guardar, eliminar y gestionar estos datos en una base de datos.
+              </p>
+              <a class="btn work__project-btn" href="http://www.trainepoks.somee.com" target="_blank">Website</a>
+            </div>
+           
+          
+          </div>
+        </section>
+        <section id="contact" class="contact container section">
+          <h2 class="contact__title">contacto</h2>
+        <p class="contact__description">
+          Si tienes alguna pregunta, propuesta o simplemente deseas conectar, no dudes en comunicarte conmigo. Estoy siempre abierto a explorar nuevas oportunidades y colaborar en proyectos. ¡Será un gusto conocerte!
+        </p>
+        <a class="contact__btn btn" href="mailto:manueltamayo9765@gmail.com" target="_blank">Contactar</a>
+        </section>
+    </main>
+
+
+
+    <script src="js/menu-mobile.js"></script>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>
