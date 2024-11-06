@@ -81,6 +81,10 @@ strong {
     color: var(--clr-yellow);
     font-weight: 600;
 }
+
+.mb-10{
+    margin-bottom: 1.5rem;
+}
   
 /* Scrollbar */
 /* body::-webkit-scrollbar {
